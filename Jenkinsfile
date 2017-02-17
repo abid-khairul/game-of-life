@@ -1,5 +1,5 @@
 node() {
-    docker.withRegistry('http://my-docker-reg', 'my-docker-reg-creds') {
+    docker.withRegistry('http://localhost:5000', '') {
     
         git url: "https://github.com/abid-khairul/game-of-life", credentialsId: ''
     
